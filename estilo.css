@@ -1,0 +1,166 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+* {
+  box-sizing: border-box;
+}
+
+.textlabel {
+    font-family: Lato;
+    font-size: 16px;
+    fill: white;
+    font-weight: 100;
+  }
+
+.valuelabel {
+    font-family: Lato;
+    font-size: 18px;
+    fill: white;
+    font-weight: 100;
+  }
+.temptext{
+  font-size: 10px;
+}
+path.line {
+    fill: none;
+    stroke: red;
+    stroke-width: 1px;
+  }
+
+.grid line {
+    stroke: white;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+  }
+
+.axis path,
+
+.axiswhite line {
+    fill: 'white';
+    stroke: 'white';
+    shape-rendering: crispEdges;
+  }
+
+.axiswhite line {
+    stroke: white;
+  }
+
+.axiswhite path {
+    stroke: white;
+  }
+.axiswhite text {
+    fill: white;
+    font-family: Lato;
+  }
+
+/* Make the percentage on the text labels bold*/
+.labelName tspan {
+    font-style: normal;
+    font-weight: 700;
+}
+.text {
+  font-size : 13px;
+}
+/* In biology we generally italicise species names. */
+.labelName {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.label {
+    font-family: sans-serif;
+    fill: #777;
+    font-size: 10px;
+}
+
+body, html {
+  font-family: "Lato";
+  margin: 10px ;
+  background-color: #000000;
+}
+
+
+body, html {
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+.container {
+  width: auto;
+  height: auto;
+}
+
+
+
+h1 {
+  font-size: 40px;
+  margin-top: .3em;
+  margin-bottom: 0;
+}
+
+h1 + h2 + h3 {
+  margin-top: 0;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 20px;
+}
+h3 {
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center
+}
+
+h1, h2, h3 {
+  font-family: lato;
+  text-rendering: optimizeLegibility;
+}
+.axislabel{
+  font-size: 13px;
+  shape-rendering: crispEdges;
+}
+.item1 { grid-area: header;
+    height: 10vh;
+ }
+.drop_ire{
+  position: absolute;
+   top: 53%;
+   right: 4%;
+}
+.item3 {
+  grid-area: main;
+  width: 120vh;
+  height: 75vh;
+  padding: 100px 10px;
+}
+.item4 { grid-area: righttop;
+  width: 60vh;
+  height: 10vh;
+  }
+.item5 { grid-area: footer; }
+
+.item6 {
+  grid-area: rightdown;
+  width: 70vh;
+  height: 50vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header righttop'
+    'main righttop'
+    'main rightdown'
+    ;
+  width: 97vw;
+  height: 90vh;
+  grid-gap: 1px;
+  background-color: 'red';
+  padding: 1px ;
+}
+
+.grid-container > div {
+  background-color: 'red';
+  padding: 10px 0;
+}
